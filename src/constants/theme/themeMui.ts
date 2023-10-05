@@ -10,5 +10,5 @@ export const MODE_PALETTE = {
 export const themeMui = (themeMode: string) => {
   const theme = themeMode === MODE_PALETTE.DARK ? themeDark : themeLight
 
-  return createTheme(themeDark)
+  return createTheme(theme)
 }
