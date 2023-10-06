@@ -12,6 +12,7 @@ const useStore = () => {
     })
   },[])
 
+
   return [mapStateToProps, mapDispatchToProps]
 }
 
