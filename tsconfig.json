@@ -1,7 +1,7 @@
 
 
 {
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "public", ".husky", "coverage", ".vscode", "__test__"],
   "include": ["src/**/*"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
@@ -32,8 +32,24 @@
     "module": "commonjs",                                /* Specify what module code is generated. */
     "rootDir": "./src",                                  /* Specify the root folder within your source files. */
     "moduleResolution": "node",                     /* Specify how TypeScript looks up a file from a given module specifier. */
-    //"baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
-    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "Actions/*": ["src/store/actions/*"],
+      "Components/*": ["src/components/*"],
+      "Config/*": ["src/store/config/*"],
+      "Constants/*": ["src/constants/*"],
+      "Containers/*": ["src/containers/*"],
+      "Fonts/*": ["src/assets/fonts/*"],
+      "Hook/*": ["src/hook/*"],
+      "Images/*": ["src/assets/images/*"],
+      "Reducers/*": ["src/store/reducers/*"],
+      "Routers/*": ["src/routers/*"],
+      "Selectors/*": ["src/store/selectors/*"],
+      "Store/*": ["src/store/*"],
+      "Styles/*": ["src/assets/styles/*"],
+      "Utils/*": ["src/utils/*"],
+      "View/*": ["src/view/*"]
+    },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     "typeRoots": ["./node_modules/@types"],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */

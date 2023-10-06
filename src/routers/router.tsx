@@ -1,6 +1,7 @@
 import React from 'react'
-import { ContainerGlobal } from './../containers/containerGlobal'
-import { Home } from './../view/Home/home'
+import { ContainerGlobal } from 'Containers/containerGlobal'
+import { Home } from 'View/home/home'
+
 import { Route, Routes } from 'react-router-dom'
 
 const Router = () => {

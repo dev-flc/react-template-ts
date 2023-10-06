@@ -1,4 +1,4 @@
-import { ACTIONS_TITLE } from './../../constants/store/store'
+import { ACTIONS_TITLE } from 'Constants/store/store'
 
 const reducerTitle = (state = {}, action : { type:string, payload: object }) => {
   if (!state) {

@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 
-import { actionSetModeIsDark } from './../../store/actions/actionsTheme'
-import { actionSetTitle } from './../../store/actions/actionSetTitle'
+import { actionSetModeIsDark } from 'Actions/actionsTheme'
+import { actionSetTitle } from 'Actions/actionSetTitle'
 
-import { convertTextUpperOrLower } from './../../utils/utils'
-import { useStore } from './../../hook/store/useStore'
+import { convertTextUpperOrLower } from 'Utils/utils'
+import { useStore } from 'Hook/store/useStore'
 
-import imageEslint from './../../assets/images/eslint.svg'
-import imagePrettier from './../../assets/images/prettier.svg'
-import imageReact from './../../assets/images/react.svg'
-import imageRedux from './../../assets/images/redux.svg'
-import imageSass from './../../assets/images/sass.svg'
-import imageWebpack from './../../assets/images/webpack.svg'
+import imageEslint from 'Images/eslint.svg'
+import imagePrettier from 'Images/prettier.svg'
+import imageReact from 'Images/react.svg'
+import imageRedux from 'Images/redux.svg'
+import imageSass from 'Images/sass.svg'
+import imageWebpack from 'Images/webpack.svg'
 
-import { MODE_PALETTE } from './../../constants/theme/themeMui'
+import ButtonIcon from 'Components/buttonIcon/buttonIcon'
+import { MODE_PALETTE } from 'Constants/theme/themeMui'
 
-import ButtonIcon from './../../components/buttonIcon/buttonIcon'
 import Container from '@mui/material/Container'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'

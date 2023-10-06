@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { INITIAL_STATE } from './config/initialState'
 import { persistReducer } from 'redux-persist'
-import reducers from './reducers/reducerAll'
 import storageSession from 'redux-persist/lib/storage/session'
 import thunk from 'redux-thunk'
+
+import { INITIAL_STATE } from 'Config/initialState'
+import reducers from 'Reducers/reducerAll'
 
 type RootState = ReturnType<typeof reducers>;
 

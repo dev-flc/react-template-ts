@@ -1,4 +1,4 @@
-import { ACTIONS_TITLE } from './../../constants/store/store'
+import { ACTIONS_TITLE } from 'Constants/store/store'
 
 export const actionSetTitle = (payload : any) => ({
   payload,

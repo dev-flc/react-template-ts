@@ -1,7 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit'
 
-import { reducerTheme } from './reducerTheme'
-import { reducerTitle } from './reducerTitle'
+
+import { reducerTheme } from 'Reducers/reducerTheme'
+import { reducerTitle } from 'Reducers/reducerTitle'
 
 const allReducers = combineReducers({
   theme: reducerTheme,

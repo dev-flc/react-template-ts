@@ -1,4 +1,4 @@
-import { ACTIONS_THEME } from './../../constants/store/store'
+import { ACTIONS_THEME } from 'Constants/store/store'
 
 export const actionSetModeIsDark = (payload : any) => ({
   payload,

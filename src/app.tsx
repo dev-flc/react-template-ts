@@ -1,13 +1,12 @@
 import React from 'react'
 
 import { BrowserRouter } from 'react-router-dom'
-import { Router } from './routers/router'
-
 import CssBaseline from '@mui/material/CssBaseline'
+import { themeMui } from 'Constants/theme/themeMui'
 import { ThemeProvider } from '@mui/material/styles'
-import { themeMui } from './constants/theme/themeMui'
 
-import { useStore } from './hook/store/useStore'
+import { Router } from 'Routers/router'
+import { useStore } from 'Hook/store/useStore'
 
 const App = () => {
   const [mapStateToProps] = useStore()
