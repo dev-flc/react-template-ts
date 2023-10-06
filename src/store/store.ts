@@ -8,10 +8,10 @@ import thunk from 'redux-thunk'
 type RootState = ReturnType<typeof reducers>;
 
 const persistConfig = {
+  blacklist: ['title'],
   key: process.env.NAME_PROJECT || 'root',
   storage: storageSession,
   version: 1,
-  blacklist: ['title']
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)

@@ -10,7 +10,6 @@ import { themeMui } from './constants/theme/themeMui'
 import { useStore } from './hook/store/useStore'
 
 const App = () => {
-
   const [mapStateToProps] = useStore()
   const { theme } = mapStateToProps
   const { paletteMode } = theme
