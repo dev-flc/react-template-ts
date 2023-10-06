@@ -6,6 +6,9 @@ const useStore = () => {
   const { getState, dispatch: mapDispatchToProps, subscribe } = store
   const [mapStateToProps, setStoreState] = useState(getState())
 
+
+
+  
   useEffect(() =>{
     subscribe(() => {
       setStoreState(getState())
