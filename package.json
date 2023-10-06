@@ -4,6 +4,7 @@
   "description": "R E A C T - T E M P L A T E - T S",
   "main": "index.js",
   "scripts": {
+    "clean:cache": "chmod +x ./clean-cache.sh && sh ./clean-cache.sh",
     "dev": "NAME_APP=$npm_package_name VERSION_APP=$npm_package_version webpack-dev-server --progress --config webpack.dev.js",
     "dev:win": "SET VERSION_APP=%npm_package_version%& SET NAME_APP=%npm_package_name%& webpack-dev-server --progress --config webpack.dev.js",
     "build": "NAME_APP=$npm_package_name VERSION_APP=$npm_package_version webpack --progress --config webpack.prod.js",
