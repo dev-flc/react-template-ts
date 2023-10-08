@@ -6,13 +6,13 @@ import thunk from 'redux-thunk'
 import { INITIAL_STATE } from 'Config/initialState'
 import reducers from 'Reducers/reducerAll'
 
-type RootState = ReturnType<typeof reducers>;
+type RootState = ReturnType<typeof reducers>
 
 const persistConfig = {
   blacklist: ['title'],
-  key: process.env.NAME_APP || 'root',
+  key: process.env.NAME_APP,
   storage: storageSession,
-  version: 1,
+  version: 1
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)

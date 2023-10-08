@@ -29,15 +29,15 @@ const Home = React.memo(() => {
   const { title, theme } = mapStateToProps
   const { paletteMode } = theme
 
-  const handleThemeMode = () => {
+  const handleThemeMode = (): void => {
     const mode =
       paletteMode === MODE_PALETTE.DARK ? MODE_PALETTE.LIGHT : MODE_PALETTE.DARK
 
     mapDispatchToProps(actionSetModeIsDark(mode))
   }
 
-  const handleConvertText = () => {
-    const [text, status] = convertTextUpperOrLower(title) as [string, boolean];
+  const handleConvertText = (): void => {
+    const [text, status] = convertTextUpperOrLower(title) as [string, boolean]
     setIsUpperCase(status)
     mapDispatchToProps(actionSetTitle(text))
   }

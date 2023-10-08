@@ -1,10 +1,9 @@
 import { ACTIONS_TITLE } from 'Constants/store/store'
 
-const reducerTitle = (state = {}, action : { type:string, payload: object }) => {
-  if (!state) {
-    return null
-  }
-
+const reducerTitle = (
+  state = {},
+  action: { type: string; payload: object }
+): object => {
   let newState = state
   const { type, payload } = action
 

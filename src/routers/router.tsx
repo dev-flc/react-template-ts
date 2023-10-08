@@ -4,7 +4,7 @@ import { Home } from 'View/home/home'
 
 import { Route, Routes } from 'react-router-dom'
 
-const Router = () => {
+const Router = (): JSX.Element => {
   return (
     <Routes>
       <Route
