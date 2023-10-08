@@ -1,5 +1,6 @@
-export const themeDark = {
-  'Symbol(mui.nested)': false,
+import { createTheme } from '@mui/material/styles'
+
+export const themeDark = createTheme({
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     unit: 'px',
@@ -41,7 +42,7 @@ export const themeDark = {
       },
       variants: [
         {
-          props: { variant: 'code' },
+          props: { variant: 'text' },
           style: {
             '& .MuiButton-endIcon': {
               color: '#bdbdbd',
@@ -69,7 +70,7 @@ export const themeDark = {
           }
         },
         {
-          props: { variant: 'link' },
+          props: { variant: 'text' },
           style: {
             '& svg': { ml: -0.5 },
             color: '#66B2FF',
@@ -245,12 +246,6 @@ export const themeDark = {
     },
 
     MuiSelect: {
-      defaultProps: {
-        IconComponent: {
-          compare: null,
-          type: {}
-        }
-      },
       styleOverrides: {
         iconFilled: {
           top: 'calc(50% - .25em)'
@@ -415,9 +410,7 @@ export const themeDark = {
       A100: '#f5f5f5',
       A200: '#eeeeee',
       A400: '#bdbdbd',
-      A700: '#616161',
-      contrastText: '#6F7E8C',
-      main: '#132F4C'
+      A700: '#616161'
     },
 
     info: {
@@ -446,20 +439,6 @@ export const themeDark = {
       main: '#3399FF'
     },
 
-    primaryDark: {
-      100: '#CEE0F3',
-      200: '#91B9E3',
-      300: '#5090D3',
-      400: '#265D97',
-      50: '#E2EDF8',
-      500: '#1E4976',
-      600: '#173A5E',
-      700: '#132F4C',
-      800: '#001E3C',
-      900: '#0A1929',
-      main: '#5090D3'
-    },
-
     secondary: {
       contrastText: 'rgba(0, 0, 0, 0.87)',
       dark: '#ab47bc',
@@ -486,7 +465,6 @@ export const themeDark = {
 
     text: {
       disabled: 'rgba(255, 255, 255, 0.5)',
-      icon: 'rgba(255, 255, 255, 0.5)',
       primary: '#fff',
       secondary: '#B2BAC2'
     },
@@ -605,16 +583,11 @@ export const themeDark = {
     },
 
     fontFamily: "'roboto'",
-    fontFamilyCode: "'roboto'",
-    fontFamilySystem: "'roboto'",
-    fontFamilyTagline: "'roboto'",
     fontSize: 14,
     fontWeightBold: 700,
-    fontWeightExtraBold: 800,
     fontWeightLight: 300,
     fontWeightMedium: 500,
     fontWeightRegular: 400,
-    fontWeightSemiBold: 600,
 
     h1: {
       fontFamily: "'roboto'",
@@ -708,4 +681,4 @@ export const themeDark = {
     speedDial: 1050,
     tooltip: 1500
   }
-}
+})

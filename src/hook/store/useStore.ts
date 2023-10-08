@@ -1,16 +1,16 @@
 import { ReactReduxContext } from 'react-redux'
 import { useContext, useEffect, useState } from 'react'
 
-const useStore = () => {
+const useStore = (): any[] => {
   const { store } = useContext(ReactReduxContext)
   const { getState, dispatch: mapDispatchToProps, subscribe } = store
   const [mapStateToProps, setStoreState] = useState(getState())
 
-  useEffect(() =>{
+  useEffect(() => {
     subscribe(() => {
       setStoreState(getState())
     })
-  },[])
+  }, [])
 
   return [mapStateToProps, mapDispatchToProps]
 }

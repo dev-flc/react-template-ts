@@ -8,7 +8,7 @@ import { ThemeProvider } from '@mui/material/styles'
 import { Router } from 'Routers/router'
 import { useStore } from 'Hook/store/useStore'
 
-const App = () => {
+const App = (): JSX.Element => {
   const [mapStateToProps] = useStore()
   const { theme } = mapStateToProps
   const { paletteMode } = theme

@@ -1,5 +1,6 @@
-export const themeLight = {
-  'Symbol(mui.nested)': false,
+import { createTheme } from '@mui/material/styles'
+
+export const themeLight = createTheme({
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     unit: 'px',
@@ -42,7 +43,7 @@ export const themeLight = {
 
       variants: [
         {
-          props: { variant: 'code' },
+          props: { variant: 'text' },
           style: {
             '& .MuiButton-endIcon': {
               color: '#bdbdbd',
@@ -70,7 +71,7 @@ export const themeLight = {
           }
         },
         {
-          props: { variant: 'link' },
+          props: { variant: 'text' },
           style: {
             '& svg': { ml: -0.5 },
             color: '#0072E5',
@@ -245,12 +246,6 @@ export const themeLight = {
     },
 
     MuiSelect: {
-      defaultProps: {
-        IconComponent: {
-          compare: null,
-          type: {}
-        }
-      },
       styleOverrides: {
         iconFilled: {
           top: 'calc(50% - .25em)'
@@ -353,8 +348,6 @@ export const themeLight = {
     }
   },
 
-  nprogress: { color: '#007FFF' },
-
   palette: {
     action: {
       activatedOpacity: 0.24,
@@ -415,9 +408,7 @@ export const themeLight = {
       A100: '#f5f5f5',
       A200: '#eeeeee',
       A400: '#bdbdbd',
-      A700: '#616161',
-      contrastText: '#6F7E8C',
-      main: '#E7EBF0'
+      A700: '#616161'
     },
 
     info: {
@@ -444,20 +435,6 @@ export const themeLight = {
       dark: '#0059B2',
       light: '#66B2FF',
       main: '#007FFF'
-    },
-
-    primaryDark: {
-      100: '#CEE0F3',
-      200: '#91B9E3',
-      300: '#5090D3',
-      400: '#265D97',
-      50: '#E2EDF8',
-      500: '#1E4976',
-      600: '#173A5E',
-      700: '#132F4C',
-      800: '#001E3C',
-      900: '#0A1929',
-      main: '#5090D3'
     },
 
     secondary: {
@@ -509,8 +486,6 @@ export const themeLight = {
       main: '#DEA500'
     }
   },
-
-  props: { MuiBadge: { overlap: 'rectangular' } },
 
   shadows: [
     'none',
@@ -604,16 +579,11 @@ export const themeLight = {
     },
 
     fontFamily: "'roboto'",
-    fontFamilyCode: "'roboto'",
-    fontFamilySystem: "'roboto'",
-    fontFamilyTagline: "'roboto'",
     fontSize: 14,
     fontWeightBold: 700,
-    fontWeightExtraBold: 800,
     fontWeightLight: 300,
     fontWeightMedium: 500,
     fontWeightRegular: 400,
-    fontWeightSemiBold: 600,
 
     h1: {
       color: '#0A1929',
@@ -708,4 +678,4 @@ export const themeLight = {
     speedDial: 1050,
     tooltip: 1500
   }
-}
+})
