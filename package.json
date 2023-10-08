@@ -12,7 +12,7 @@
     "dev:win": "SET VERSION_APP=%npm_package_version%& SET NAME_APP=%npm_package_name%& webpack-dev-server --progress --config webpack.dev.js",
     "build": "NAME_APP=$npm_package_name VERSION_APP=$npm_package_version webpack --progress --config webpack.prod.js",
     "build:win": "SET VERSION_APP=%npm_package_version%& SET NAME_APP=%npm_package_name%& webpack --progress --config webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "prepare": "husky install"
   },
   "repository": {
