@@ -4,8 +4,10 @@ server.js
 webpack.common.js
 webpack.dev.js
 webpack.prod.js
+commitlint.config.js
 README.md
 LICENCE
+clean-cache.sh
 .eslintrc.js
 .prettierrc.js
 .gitignore
@@ -13,7 +15,10 @@ LICENCE
 .eslintignore
 .prettierignore
 .editorconfig
+.lintstagedrc
 node_modules/
 public/
 coverage/
 .vscode/
+.husky/
+__test__/
