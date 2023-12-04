@@ -25,7 +25,7 @@ __NOTA :__ Full accessories are located at the following URL : [ Documentation B
 ****************************************************/
 
 import React from 'react';
-import ButtonIcon from "Components/buttonIcon/buttonIcon.js"
+import ButtonIcon from "Components/buttonIcon/buttonIcon.ts"
 import DarkModeIcon from "@mui/icons-material/DarkMode"
 import LightModeIcon from "@mui/icons-material/LightMode"
 
